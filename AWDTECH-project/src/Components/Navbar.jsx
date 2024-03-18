@@ -1,6 +1,8 @@
 import './css/Navbar.css'
 import logo from './assets/Logo.jpg'
-
+import fb from './assets/fb.png'
+import ig from './assets/ig.png'
+import tw from './assets/tw.png'
 const Navbar = () => {
   return (
     <div className='nav'>
@@ -17,6 +19,11 @@ const Navbar = () => {
             <a href='/ContactUs'>Contact us</a>
         </li>
     </ul>
+    <div class="social-links">
+            <img src={fb}/>
+            <img src={ig}/>
+            <img src={tw}/>
+        </div>
     </div>
 
   
