@@ -44,9 +44,9 @@
 }
 
 .nav li.active{
-    color: rgb(72, 202, 219);
+    color: #22dbdb;
 }
 
 .nav li:hover{
-    color: rgb(72, 202, 219);
+    color: #22dbdb;
 }

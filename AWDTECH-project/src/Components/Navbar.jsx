@@ -1,5 +1,6 @@
 import './css/Navbar.css'
-import logo from './assets/Logo.png'
+import logo from './assets/Logo.jpg'
+
 const Navbar = () => {
   return (
     <div className='nav'>
