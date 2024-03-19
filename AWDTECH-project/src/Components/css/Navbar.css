@@ -9,7 +9,7 @@
 
 .nav{
     width: 100%;
-    background-color:white;
+    background-color: white;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
@@ -23,12 +23,13 @@
 .logo{
     width: 160px;
     cursor: pointer;
+    background-color: inherit;
 }
 
 .nav li{
     display: inline-block;
     margin: 10px 20px;
-    font-size:25px;
+    /* font-size:25px; */
     cursor: pointer;
 }
 .nav ul{

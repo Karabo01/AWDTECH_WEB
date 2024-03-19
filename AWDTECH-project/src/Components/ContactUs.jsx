@@ -24,16 +24,19 @@ const ContactUs = () => {
         </div>
 
         <div className='footer'>
-            <img src={logo} alt='' className='logoFoot' />
             <ul className='footerNav'>
                 <li>
-                    <a href='/whoweare'>who we are</a>
+                    <a href='/whoweare'>Who we are</a>
                 </li>
                 <li>
                     <a href='/Services'>Services</a>
                 </li>
                 <li>
                     <a href='/ContactUs'>Contact us</a>
+                </li>
+
+                <li>
+                    <a href='/Pricing'>Pricing</a>
                 </li>
             </ul>
             

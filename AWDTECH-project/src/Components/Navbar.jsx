@@ -10,13 +10,17 @@ const Navbar = () => {
  
     <ul>
         <li>
-            <a href='/whoweare'>who we are</a>
+            <a href='/whoweare'>Who we are</a>
         </li>
         <li>
             <a href='/Services'>Services</a>
         </li>
         <li>
             <a href='/ContactUs'>Contact us</a>
+        </li>
+
+        <li>
+            <a href='/Pricing'>Pricing</a>
         </li>
     </ul>
     <div class="social-links">
