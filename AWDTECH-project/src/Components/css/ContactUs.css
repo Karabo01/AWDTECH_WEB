@@ -1,6 +1,6 @@
 
 .contactUs-container{
-    position: relative;
+    /* position: relative; */
     max-width: 500px;
     margin: 0 auto;
     /*padding: 20px;
@@ -16,7 +16,7 @@
 
 .heading{
     text-align: center;
-    color: rgb(45, 170, 187);
+    color: inherit;
     
 }
 

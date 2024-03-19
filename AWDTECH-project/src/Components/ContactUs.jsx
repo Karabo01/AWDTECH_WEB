@@ -17,9 +17,9 @@ const ContactUs = () => {
             </form>
         </div>
         <div class="social-links">
-            <img src={fb}/>
-            <img src={ig}/>
-            <img src={tw}/>
+            <a href="https://www.facebook.com"><img src={fb} alt="Facebook"/></a>
+            <a href="https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1"><img src={ig} alt="Instagram"/></a>
+            <a href="https://twitter.com"><img src={tw} alt="Twitter"/></a>
             
         </div>
 
