@@ -4,6 +4,9 @@ import Navbar from './Components/Navbar'
 import ContactUs from './Components/ContactUs'
 import PricingCard from "./Components/PricingCard";
 import "./Components/css/App.css";
+import { Carousel } from './Components/Carousel';
+import { CarouselItem } from './Components/CarouselItem';
+
 
 function App() {
   const [selectMonthly, setSelectMonthly] = useState(true);
@@ -55,6 +58,7 @@ function App() {
           />
         </div>
         <ContactUs/>
+        
       </div>
     </div>
   );
