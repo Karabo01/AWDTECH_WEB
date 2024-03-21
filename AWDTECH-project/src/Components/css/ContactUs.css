@@ -1,4 +1,8 @@
-
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--primary-fw);
+    font-size: var(--primary-fs);
+}
 .contactUs-container{
     /* position: relative; */
     max-width: 500px;
@@ -15,9 +19,12 @@
 }
 
 .heading{
+    place-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(232, 13%, 33%);
+    font-weight: var(--primary-fw);
+    font-size: 30px;
     text-align: center;
-    color: inherit;
-    
 }
 
 input[type="text"],
@@ -30,20 +37,25 @@ textarea {
     border-radius: 5px;
   }
 .btnSubmitMessage{
-    width: 140px;
-    border: 0;
-    padding: 12px 0;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right,#52affb, #22dbdb);
-    border-radius: 6px;
     cursor: pointer;
+    padding-block: 1em;
+    width: 100%;
+    border-radius: 0.5em;
+    background-image: linear-gradient(to right, var(--primary-linear-gradient));
+    border: 2px solid transparent;
+    outline: transparent;
+    transition: 0.125s ease;
+    color: var(--neutral-white);
 }
 
 
 .btnSubmitMessage:hover{
     
-    color: rgb(50, 74, 214);
+    color: hsl(237, 63%, 64%);
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, var(--primary-linear-gradient)) border-box;
+    border-radius: 0.5em;
+    border: 2px solid transparent;
 }
     
 .social-links img{
@@ -62,7 +74,7 @@ textarea {
     justify-content: space-between; 
     align-items: center;
     gap: 2rem;
-    padding: 15px 36%;
+    padding: 15px 39%;
     padding-bottom: 25px;
     text-align: center; 
 }

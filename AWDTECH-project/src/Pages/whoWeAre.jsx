@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar";
 
 const whoWeAre = () => {
   return (
-    <div>whoWeAre</div>
+    <div>Well We are AWDTECH</div>
   )
 }
 

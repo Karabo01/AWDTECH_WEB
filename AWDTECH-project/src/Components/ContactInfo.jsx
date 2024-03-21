@@ -1,9 +1,33 @@
-import './css/ContactUs.css'
-import fb from './assets/fb.png'
-import ig from './assets/ig.png'
-import tw from './assets/tw.png'
-import logo from './assets/Logo.jpg'
-const ContactUs = () => {
+import React, { useState } from 'react';
+import './css/ContactInfo.css'
+
+const ContactInfo = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g., send data to backend
+    console.log(formData);
+    // Reset form data after submission
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
   return (
     <section>
         <div className="contactUs-container">
@@ -16,13 +40,18 @@ const ContactUs = () => {
                 <button className="btnSubmitMessage" type="submit">Submit</button>
             </form>
         </div>
+        {/* <div className='address'>
+            <section>
+                <p>adress and contacts</p>
+            </section>
+        </div>
         <div class="social-links">
             <a href="https://www.facebook.com"><img src={fb} alt="Facebook"/></a>
             <a href="https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1"><img src={ig} alt="Instagram"/></a>
             <a href="https://twitter.com"><img src={tw} alt="Twitter"/></a>
             
         </div>
-        <div className='contactDetails'></div>
+
         <div className='footer'>
             <ul className='footerNav'>
                 <li>
@@ -40,9 +69,16 @@ const ContactUs = () => {
                 </li>
             </ul>
             
-        </div>
-    </section>
-  )
-}
+        </div> */}
+    
+      <div className="contact-details">
+        <p>Company Name: XYZ Corporation</p>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Email: info@xyzcorp.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      </section>
+  );
+};
 
-export default ContactUs
+export default ContactInfo;

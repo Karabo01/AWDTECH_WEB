@@ -6,7 +6,7 @@ import tw from './assets/tw.png'
 const Navbar = () => {
   return (
     <div className='nav'>
-        <img src={logo} alt='' className='logo' />
+       <a href='/'> <img src={logo} alt='' className='logo' /></a>
  
     <ul>
         <li>

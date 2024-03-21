@@ -18,14 +18,14 @@
   --neutral-white: hsl(0, 0%, 100%);
 }
 
-.App {
+.pricingSection {
   position: relative;
   min-height: 100vh;
   min-height: 100dvh;
   font-family: "Montserrat", sans-serif;
   font-weight: var(--primary-fw);
   font-size: var(--primary-fs);
-  display: grid;
+  /* display: grid; */
   place-items: center;
   background-color: var(--neutral-very-light-grayish-blue);
   background-image: url("../images/bg-top.svg");
@@ -35,7 +35,7 @@
   z-index: 999;
 }
 
-.App::before {
+.pricingSection::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -55,8 +55,14 @@ button {
   font-size: var(--primary-fs);
 }
 
+.header-topic{
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--primary-fw);
+  font-size: 30px;
+}
+
 /*toggle*/
-.App .price-switch {
+.pricingSection .price-switch {
   --border-radius: 10em;
   display: block;
   width: 50px;
@@ -66,13 +72,13 @@ button {
   cursor: pointer;
 }
 
-.App .price-checkbox {
+.pricingSection .price-checkbox {
   opacity: 0;
   height: 0;
   width: 0;
 }
 
-.App .switch-slider {
+.pricingSection .switch-slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,11 +88,11 @@ button {
   background-image: linear-gradient(to right, var(--primary-linear-gradient));
 }
 
-.App .switch-slider:is(:hover, :focus-visible) {
+.pricingSection .switch-slider:is(:hover, :focus-visible) {
   opacity: 0.7;
 }
 
-.App .switch-slider::before {
+.pricingSection .switch-slider::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -99,21 +105,21 @@ button {
   transition: 0.3s ease;
 }
 
-.App .price-checkbox:checked + .switch-slider::before {
+.pricingSection .price-checkbox:checked + .switch-slider::before {
   transform: translateX(0%);
 }
 /*------*/
 
-.App .app-container {
+.pricingSection .app-container {
   width: min(90%, 70rem);
 }
 
-.App header .header-topic {
+.pricingSection header .header-topic {
   text-align: center;
   color: var(--neutral-dark-grayish-blue);
 }
 
-.App header > .header-row {
+.pricingSection header > .header-row {
   margin-top: 2em;
   display: flex;
   justify-content: center;
@@ -121,7 +127,7 @@ button {
   gap: 2em;
 }
 
-.App .pricing-cards {
+.pricingSection .pricing-cards {
   margin-top: 4em;
   min-height: 30rem;
   display: flex;
@@ -130,10 +136,10 @@ button {
 }
 
 @media screen and (max-width: 800px) {
-  .App {
+  .pricingSection {
     padding-block: 4em;
   }
-  .App .pricing-cards {
+  .pricingSection .pricing-cards {
     flex-direction: column;
     gap: 2em;
   }
