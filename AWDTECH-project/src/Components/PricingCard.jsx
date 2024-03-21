@@ -1,7 +1,7 @@
 import './css/PricingCard.css'
 
 
-const PricingCard = ({ title, price, storage, users, WebTraffic }) => {
+const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) => {
     return (
       <div className="PricingCard">
         <header>
@@ -13,8 +13,9 @@ const PricingCard = ({ title, price, storage, users, WebTraffic }) => {
           <div className="card-storage">{storage}</div>
           <div className="card-users-allowed">{users}</div>
           <div className="card-send-up">{WebTraffic}</div>
+          <div className="card-send-up">{Maintenance}</div>
         </div>
-        <button className="card-btn">READ MORE</button>
+        <button className="card-btn">Read More</button>
       </div>
     );
   };

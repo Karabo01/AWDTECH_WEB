@@ -29,26 +29,29 @@ const Pricing = () => {
           <div className="pricing-cards">
             <PricingCard
               title="Essential"
-              price={selectMonthly ? "R110/pm" : "R2500"}
+              price={selectMonthly ? "R250/pm" : "R2500"}
               storage={selectMonthly ? "5GB Storage" : "1 page"}
               users={selectMonthly? "25 users": "Responsive"}
-              WebTraffic={selectMonthly? "Unlimited Web Traffic":"Unlimited Web Traffic"}
+              WebTraffic={selectMonthly? "Unlimited Web Traffic":"1 month free support"}
+              Maintenance={selectMonthly? "Maintenance":"Whatsapp click to chat"}
               
             />
             <PricingCard
               title="Deluxe"
-              price={selectMonthly ? "R150/pm" : "R3500"}
+              price={selectMonthly ? "R360/pm" : "R3500"}
               storage={selectMonthly ? "10GB Storage" : "1-4 pages"}
-              users={selectMonthly? "50 users": "Responsive"}
-              WebTraffic={selectMonthly? "Unlimited Web Traffic":"Unlimited Web Traffic"}
+              users={selectMonthly? "75 users": "Responsive"}
+              WebTraffic={selectMonthly? "Unlimited Web Traffic":"3 months free support"}
+              Maintenance={selectMonthly? "Maintenance":"Whatsapp click to chat"}
               
             />
             <PricingCard
               title="Premium"
-              price={selectMonthly ? "R250/pm" : "R4500"}
+              price={selectMonthly ? "R450/pm" : "R4500"}
               storage={selectMonthly ? "15GB Storage" : "1-10 pages"}
-              users={selectMonthly? "75 users": "Responsive"}
-              WebTraffic={selectMonthly? "Unlimited Web Traffic":"Unlimited Web Traffic"}
+              users={selectMonthly? "100 users": "Responsive"}
+              WebTraffic={selectMonthly? "Unlimited Web Traffic":"6 months free support"}
+              Maintenance={selectMonthly? "Maintenance":"Whatsapp click to chat"}
 
             />
           </div>

@@ -1,22 +1,16 @@
 import ContactUs from "../Components/ContactUs";
 import Navbar from "../Components/Navbar";
 
-
-
 import React from 'react'
-import WhoWeAre from "../Components/WhoWeAre";
 import Pricing from "../Components/Pricing";
 
-
-const Home = () => {
+const Prices = () => {
   return (
     <div>
-      <WhoWeAre/>
-      <Pricing/>
-      <ContactUs/>
-      
+        <Pricing/>
+        <ContactUs/>
     </div>
   )
 }
 
-export default Home
+export default Prices

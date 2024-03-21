@@ -16,12 +16,13 @@ const Navbar = () => {
             <a href='/Services'>Services</a>
         </li>
         <li>
+            <a href='/Pricing'>Pricing</a>
+        </li>
+        <li>
             <a href='/ContactUs'>Contact us</a>
         </li>
 
-        <li>
-            <a href='/Pricing'>Pricing</a>
-        </li>
+        
     </ul>
         <div class="social-links">
             <a href="https://www.facebook.com"><img src={fb} alt="Facebook"/></a>
