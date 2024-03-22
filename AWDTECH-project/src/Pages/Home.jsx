@@ -11,8 +11,8 @@ import Pricing from "../Components/Pricing";
 const Home = () => {
   return (
     <div>
-      <WhoWeAre/>
-      <Pricing/>
+      {/* <WhoWeAre/> */}
+      {/* <Pricing/> */}
       <ContactUs/>
       
     </div>

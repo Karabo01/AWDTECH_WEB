@@ -4,13 +4,13 @@
     font-size: var(--primary-fs);
 }
 .contactUs-container{
-    /* position: relative; */
-    max-width: 500px;
-    margin: 0 auto;
-    /*padding: 20px;
+     position: relative; 
+     max-width: 500px;
+    margin: 0 auto; 
+    padding: 20px;
     border: 1px solid #36cece;
     border-radius: 5px;
-    background-color: linear-gradient(to right,#52affb, #22dbdb);  */
+    background-color: linear-gradient(to right,#52affb, #22dbdb);  
 }
 
 .form-card{
@@ -69,14 +69,14 @@ textarea {
 }
 
 .footer{
-    width: 200%;
+     width: 200px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     gap: 2rem;
-    padding: 15px 39%;
-    padding-bottom: 25px;
-    text-align: center; 
+     padding: 15px 39%; 
+     padding-bottom: 25px;
+     text-align: center;   
 }
 
 .footerNav{
