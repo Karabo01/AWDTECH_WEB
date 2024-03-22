@@ -8,7 +8,7 @@ const Prices = () => {
   return (
     <div>
         <Pricing/>
-        <ContactUs/>
+        {/* <ContactUs/> */}
     </div>
   )
 }

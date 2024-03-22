@@ -6,7 +6,7 @@ import WhoWeAre from "../Components/WhoWeAre";
 const AboutUs = () => {
   return (
     <div>
-      {/* <WhoWeAre/> */}
+      <WhoWeAre/>
       {/* <Service/>
        <Pricing/>
       <ContactUs/>  */}
