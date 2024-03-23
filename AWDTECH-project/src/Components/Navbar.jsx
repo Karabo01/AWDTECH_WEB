@@ -1,8 +1,8 @@
 import './css/Navbar.css'
 import logo from './assets/Logo.jpg'
-import fb from './assets/fb.png'
+import wh from './assets/whatsapp.png'
 import ig from './assets/ig.png'
-import tw from './assets/tw.png'
+import ld from './assets/linkedin_icon.png'
 const Navbar = () => {
   return (
     <div className='nav'>
@@ -25,9 +25,9 @@ const Navbar = () => {
         
     </ul>
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src={fb} alt="Facebook"/></a>
+            <a href="https://wa.me/+27828355397"><img src={wh} alt="Whatsapp"/></a>
             <a href="https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1"><img src={ig} alt="Instagram"/></a>
-            <a href="https://twitter.com"><img src={tw} alt="Twitter"/></a>
+            <a href="https://LinkedIn.com"><img src={ld} alt="Linkedin"/></a>
             
         </div>
 

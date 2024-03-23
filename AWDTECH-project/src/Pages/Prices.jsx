@@ -3,13 +3,16 @@ import Navbar from "../Components/Navbar";
 
 import React from 'react'
 import Pricing from "../Components/Pricing";
-
+import {motion} from 'framer-motion'
 const Prices = () => {
   return (
-    <div>
+    <motion.div
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth, transition: {duration: 0.9}}}>
         <Pricing/>
         {/* <ContactUs/> */}
-    </div>
+    </motion.div>
   )
 }
 

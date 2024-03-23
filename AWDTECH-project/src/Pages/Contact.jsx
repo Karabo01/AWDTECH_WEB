@@ -1,12 +1,16 @@
 import ContactUs from "../Components/ContactUs";
 import Navbar from "../Components/Navbar";
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    >
         <ContactUs/>
-    </div>
+    </motion.div>
   )
 }
 

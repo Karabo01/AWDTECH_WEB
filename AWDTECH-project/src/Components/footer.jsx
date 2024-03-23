@@ -1,6 +1,6 @@
-import fb from './assets/fb.png'
+import wh from './assets/whatsapp.png'
 import ig from './assets/ig.png'
-import tw from './assets/tw.png'
+import ld from './assets/linkedin_icon.png'
 import './css/Footer.css'
 
 const Footer = () => {
@@ -26,9 +26,9 @@ const Footer = () => {
            
         </div>
         <div class="social-links-footer">
-                <a href="https://www.facebook.com"><img src={fb} alt="Facebook"/></a>
+                <a href="https://wa.me/+27828355397"><img src={wh} alt="Whatsapp"/></a>
                 <a href="https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1"><img src={ig} alt="Instagram"/></a>
-                <a href="https://twitter.com"><img src={tw} alt="Twitter"/></a>
+                <a href="https://LinkedIn.com"><img src={ld} alt="Linkedin"/></a>
                 
             </div>
       </div>

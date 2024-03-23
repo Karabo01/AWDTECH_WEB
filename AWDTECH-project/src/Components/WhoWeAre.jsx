@@ -3,6 +3,7 @@ import './css/WhoWeAre.css'
 import Tech from './assets/whoweare-img.jpg'
 import scroll from './assets/scrollicon.png'
 
+
 const WhoWeAre = () => {
   return (
     
@@ -22,13 +23,6 @@ const WhoWeAre = () => {
                   </p>
             </div>
         </div>
-        
-        {/* <br></br>
-        <br></br>
-        <br></br>
-        <br></br> */}
-        
-        {/* <img className="scrolIcon" src={scroll} /> */}
         
     </div>
   )

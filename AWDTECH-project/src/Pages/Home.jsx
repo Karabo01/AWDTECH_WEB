@@ -7,17 +7,21 @@ import React from 'react'
 import WhoWeAre from "../Components/WhoWeAre";
 import Pricing from "../Components/Pricing";
 import { Carousel } from "../Components/Carousel";
-
+import {motion} from 'framer-motion'
 
 const Home = () => {
   return (
-    <div>
+    <motion.div
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth, transition: {duration: 0.9}}}
+    >
       <WhoWeAre/>
       {/* <Carousel/> */}
       {/* <Pricing/> */}
       {/* <ContactUs/> */}
       
-    </div>
+    </motion.div>
   )
 }
 
