@@ -2,14 +2,20 @@
     font-family: "Montserrat", sans-serif;
     font-weight: var(--primary-fw);
     font-size: var(--primary-fs);
+    
 }
+.ContactPage
+{
+    /* height: 560px; */
+}
+
 .contactUs-container{
      position: relative; 
      max-width: 500px;
     margin: 0 auto; 
     padding: 20px;
-    border: 1px solid #36cece;
-    border-radius: 5px;
+    border: 5px solid #36cece;
+    border-radius: 19px;
     background-color: linear-gradient(to right,#52affb, #22dbdb);  
 }
 
@@ -68,41 +74,5 @@ textarea {
     text-align: center;
 }
 
-.footer{
-     width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    gap: 2rem;
-     padding: 15px 39%; 
-     padding-bottom: 25px;
-     text-align: center;   
-}
 
-.footerNav{
-    padding:0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.footerNav a{
-    color: inherit;
-    text-decoration: none;
-}
-
-
-.footerNav li.active{
-    color: #22dbdb;
-}
-
-.footer li:hover{
-    color: #22dbdb;
-}
-
-.logoFoot{
-    width: 100px;
-    cursor: pointer;
-}
 

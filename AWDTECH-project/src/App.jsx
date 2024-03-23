@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Navbar from './Components/Navbar'
+import Footer from './Components/footer'
 import ContactUs from './Components/ContactUs'
 // For Routing pages
 import {Route, Router, Routes } from 'react-router-dom';
@@ -34,7 +35,7 @@ function App() {
               <Route path='/Services' element={<Carousel/>}></Route>
               
             </Routes>
-         
+         <Footer/>
         </div>
       </div>
    

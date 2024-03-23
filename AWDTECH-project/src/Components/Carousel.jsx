@@ -57,7 +57,7 @@ export const Carousel = () =>{
                 </span>
                 </button>
 
-                <div className="indicators">
+                    < div className="indicators">
                  {items.map((item, index) =>{
 
                     return(

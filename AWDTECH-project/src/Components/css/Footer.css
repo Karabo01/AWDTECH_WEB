@@ -1,0 +1,46 @@
+.social-links-footer img{
+    height: 13px;
+    margin: 20px;
+    /* cursor: pointer; */
+    /* display: inline-block; */
+}
+
+.social-links-footer{
+    text-align: center;
+}
+
+.footer{
+     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4%;
+     text-align: center;   
+}
+
+.footerNav{
+    margin-left: 40%;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.footerNav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.footerNav li.active{
+    color: #22dbdb;
+}
+
+.footer li:hover{
+    color: #22dbdb;
+}
+
+.logoFoot{
+    width: 100px;
+    cursor: pointer;
+}

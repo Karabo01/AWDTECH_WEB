@@ -6,14 +6,16 @@ import Navbar from "../Components/Navbar";
 import React from 'react'
 import WhoWeAre from "../Components/WhoWeAre";
 import Pricing from "../Components/Pricing";
+import { Carousel } from "../Components/Carousel";
 
 
 const Home = () => {
   return (
     <div>
       <WhoWeAre/>
+      {/* <Carousel/> */}
       {/* <Pricing/> */}
-      <ContactUs/>
+      {/* <ContactUs/> */}
       
     </div>
   )

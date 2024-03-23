@@ -20,19 +20,16 @@
 
 .pricingSection {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 560px;
   font-family: "Montserrat", sans-serif;
   font-weight: var(--primary-fw);
-  font-size: var(--primary-fs);
-  /* display: grid; */
+  font-size: var(--primary-fs); 
   place-items: center;
   background-color: var(--neutral-very-light-grayish-blue);
   background-image: url("../images/bg-top.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 375px 658px;
-  z-index: 999;
 }
 
 .pricingSection::before {
