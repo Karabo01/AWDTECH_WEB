@@ -6,13 +6,14 @@
 }
 .ContactPage
 {
-    /* height: 560px; */
+    height: 600px;
 }
 
 .contactUs-container{
      position: relative; 
      max-width: 500px;
-    margin: 0 auto; 
+    margin: 520px ;
+    margin-top: 80px; 
     padding: 20px;
     border: 5px solid #36cece;
     border-radius: 19px;
@@ -73,6 +74,7 @@ textarea {
 .social-links{
     text-align: center;
 }
+
 
 
 

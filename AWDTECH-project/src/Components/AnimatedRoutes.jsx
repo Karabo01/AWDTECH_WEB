@@ -5,6 +5,7 @@ import { Carousel } from '../Components/Carousel';
 import AboutUs from '../Pages/AboutUs';
 import Prices from '../Pages/Prices';
 import Contact from '../Pages/Contact';
+import Services from '../Pages/Services';
 
 import {AnimatePresence} from "framer-motion";
 
@@ -18,7 +19,7 @@ const AnimatedRoutes = () => {
         <Route path='/whoweare' element={<AboutUs/>}/>
         <Route path='/Pricing' element={ <Prices/>}></Route>
         <Route path='/ContactUs' element={<Contact/>}></Route>
-        <Route path='/Services' element={<Carousel/>}></Route> 
+        <Route path='/Services' element={<Services/>}></Route> 
     </Routes>
   </AnimatePresence>
   )

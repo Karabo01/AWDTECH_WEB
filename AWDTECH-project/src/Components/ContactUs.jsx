@@ -5,6 +5,8 @@ import tw from './assets/tw.png'
 import logo from './assets/Logo.jpg'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Tech from './assets/whoweare-img.jpg'
+
 const ContactUs = () => {
     const form = useRef();
 
@@ -37,7 +39,9 @@ const ContactUs = () => {
             </form>
         </div>
         
-        <div className='contactDetails'></div>
+        {/* <div className='imageContact'>
+          <img src={Tech} alt='' className='techimg' />
+        </div> */}
         
     </section>
   )
