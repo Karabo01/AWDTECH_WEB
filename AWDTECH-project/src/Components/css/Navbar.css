@@ -49,9 +49,9 @@
 }
 
 .nav li.active{
-    color: #22dbdb;
+    color: white;
 }
 
 .nav li:hover{
-    color: #22dbdb;
+    color: white;
 }

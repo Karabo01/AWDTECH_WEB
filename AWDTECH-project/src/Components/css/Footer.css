@@ -37,11 +37,11 @@
 
 
 .footerNav li.active{
-    color: #22dbdb;
+    color: white;
 }
 
 .footer li:hover{
-    color: #22dbdb;
+    color: white;
 }
 
 .logoFoot{
