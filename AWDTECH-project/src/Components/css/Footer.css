@@ -1,12 +1,14 @@
 .social-links-footer img{
     height: 13px;
     margin: 20px;
+    
     /* cursor: pointer; */
     /* display: inline-block; */
 }
 
 .social-links-footer{
     text-align: center;
+    background: linear-gradient(to left, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
 
 .footer{
@@ -17,6 +19,7 @@
     gap: 2rem;
     margin-top: 4%;
      text-align: center;   
+     background: linear-gradient(to left, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
 
 .footerNav{
