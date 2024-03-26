@@ -17,7 +17,7 @@
     justify-content: space-between; 
     align-items: center;
     gap: 2rem;
-    margin-top: 4%;
+    height: 12px;
      text-align: center;   
      background: linear-gradient(to left, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
@@ -27,7 +27,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .footerNav a{

@@ -1,6 +1,7 @@
 .Panel{
     display: flex;
     height: 560px; 
+    margin-top: 70px;
     gap: 10rem;
 
 }
