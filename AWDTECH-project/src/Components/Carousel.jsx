@@ -2,7 +2,7 @@ import React from "react";
 import { CarouselItem } from "./CarouselItem";
 import internet from "./assets/WebDesign.png";
 import cloudserver from "./assets/Hosting.png";
-import web from "./assets/WebApp.png";
+import web from "./assets/app.png";
 import { useState } from "react";
 import './css/Carousel.css';
 export const Carousel = () =>{
