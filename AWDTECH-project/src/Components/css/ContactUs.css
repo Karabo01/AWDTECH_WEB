@@ -3,21 +3,46 @@
     font-weight: var(--primary-fw);
     font-size: var(--primary-fs);
     
+    
 }
 .ContactPage
 {
-    height: 600px;
+     
+    margin-top: 70px;
+    margin-bottom: 17px;
+    
+    
+    
 }
-
+.contact{
+    height: 560px;
+    display: flex;
+    width: 100%;
+     background: linear-gradient(to bottom,white,hsl(194, 72%, 79%),hsl(167, 36%, 70%),white); 
+}
+.contactDetails{
+    /* position: relative;  */
+    box-sizing: border-box;
+    width: 48%;
+    /* border: 5px solid #c4e0e0; */
+    border-radius: 12px;
+    /* background: linear-gradient(to bottom, hsl(167, 60%, 58%),white,hsl(0, 0%, 100%), white,hsl(194, 91%, 56%)); */
+    font-size: x-large;
+    letter-spacing: 1px;
+    line-height: 4vh;
+    justify-content: center;
+    padding: 10px;
+    text-align: center; 
+    color: var(--neutral-dark-grayish-blue);
+}
 .contactUs-container{
-     position: relative; 
-     max-width: 500px;
-    margin: 520px ;
-    margin-top: 80px; 
+     /* position: relative;  */
+     width: 48%;
+    margin: 0 auto; 
     padding: 20px;
-    border: 5px solid #36cece;
-    border-radius: 19px;
-    background-color: linear-gradient(to right,#52affb, #22dbdb);  
+    /* border: 5px solid #36cece; */
+    border-radius: 12px;
+    
 }
 
 .form-card{
@@ -37,14 +62,21 @@
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: inherit;
+    /* background-color: inherit; */
     width: 100%;
     padding: 10px;
-    border: 1px solid #3fd1a5;
+    border:transparent;
+
+    border: 1px solid #3fd1a5; 
     border-radius: 5px;
+  }
+
+.address{
+    margin-top: 160px;
   }
 .btnSubmitMessage{
     cursor: pointer;
+    margin-top: 40px;
     padding-block: 1em;
     width: 100%;
     border-radius: 0.5em;
@@ -75,6 +107,31 @@ textarea {
     text-align: center;
 }
 
+@media (max-width: 740px) {
+    .contact{
+        flex-direction: column;
+        height: auto;
+    }
 
+    .contactUs-container{
+        
+        width: max-content;
+       padding: 10px; 
+   }
+
+   .contactDetails{
+    width: fit-content;
+    margin-left: 15%;
+   margin-top: -140px;
+    
+    
+   }
+/* 
+   .address{
+    margin-top: 90px;
+    margin-left: 25%;
+
+   } */
+}
 
 

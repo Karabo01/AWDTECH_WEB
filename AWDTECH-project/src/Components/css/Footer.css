@@ -1,12 +1,14 @@
 .social-links-footer img{
     height: 13px;
     margin: 20px;
+    
     /* cursor: pointer; */
     /* display: inline-block; */
 }
 
 .social-links-footer{
     text-align: center;
+    background: linear-gradient(to left, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
 
 .footer{
@@ -15,8 +17,9 @@
     justify-content: space-between; 
     align-items: center;
     gap: 2rem;
-    margin-top: 4%;
+    height: 12px;
      text-align: center;   
+     background: linear-gradient(to left, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
 
 .footerNav{
@@ -24,6 +27,7 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-top: 10px;
 }
 
 .footerNav a{
@@ -33,14 +37,23 @@
 
 
 .footerNav li.active{
-    color: #22dbdb;
+    color: white;
 }
 
 .footer li:hover{
-    color: #22dbdb;
+    color: white;
 }
 
 .logoFoot{
     width: 100px;
     cursor: pointer;
+}
+
+@media (max-width:740px) {
+    .footerNav{
+        margin-left: 5%;
+    }
+
+   
+    
 }

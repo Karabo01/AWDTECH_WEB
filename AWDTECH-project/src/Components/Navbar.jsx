@@ -25,7 +25,7 @@ const Navbar = () => {
         
     </ul>
         <div class="social-links">
-            <a href="https://wa.me/+27828355397"><img src={wh} alt="Whatsapp"/></a>
+            <a href="https://wa.me/+27686988104"><img src={wh} alt="Whatsapp"/></a>
             <a href="https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1"><img src={ig} alt="Instagram"/></a>
             <a href="https://LinkedIn.com"><img src={ld} alt="Linkedin"/></a>
             

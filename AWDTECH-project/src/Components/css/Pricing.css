@@ -19,8 +19,10 @@
 }
 
 .pricingSection {
-  position: relative;
-  height: 600px;
+  /* position: relative; */
+  height: 560px; 
+  margin-top: 25px;
+  margin-bottom: 62px;
   font-family: "Montserrat", sans-serif;
   font-weight: var(--primary-fw);
   font-size: var(--primary-fs); 
@@ -33,7 +35,7 @@
 }
 
 .pricingSection::before {
-  content: "";
+  /* content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -43,7 +45,7 @@
   background-image: url("../images/bg-bottom.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+  z-index: -1; */
 }
 
 button {
@@ -135,9 +137,15 @@ button {
 @media screen and (max-width: 800px) {
   .pricingSection {
     padding-block: 4em;
+    height: auto;
   }
   .pricingSection .pricing-cards {
     flex-direction: column;
     gap: 2em;
+
   }
+}
+
+@media (max-width: 1024px){
+
 }

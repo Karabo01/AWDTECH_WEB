@@ -1,6 +1,7 @@
 .Panel{
     display: flex;
-    height: 600px; 
+    height: 560px; 
+    margin-top: 70px;
     gap: 10rem;
 
 }
@@ -56,4 +57,22 @@
     object-fit:cover;
     display:block;
     margin:auto; */
+}
+
+@media (max-width:740px) {
+
+    .Panel{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .image-whoweare{
+        width: auto;
+    }
+
+    .text{
+        margin-top: -100px;
+        margin-left: 10%;
+    }
 }

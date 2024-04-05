@@ -10,6 +10,7 @@
 
 
 .nav{
+    /* position: fixed; */
     width: 100%;
     background-color: white;
     color: rgb(0, 0, 0);
@@ -18,8 +19,10 @@
     align-items: center;
     gap: 2rem;
     padding: 15px 7%;
-    padding-bottom: 25px;
+    height: 100px;
+    /* padding-bottom: 25px; */
     text-align: center;
+    background: linear-gradient(to right, white,hsl(0, 0%, 100%), hsl(167, 60%, 58%),hsl(194, 91%, 56%), hsl(249, 48%, 63%));
 }
 
 .logo{
@@ -47,9 +50,22 @@
 }
 
 .nav li.active{
-    color: #22dbdb;
+    color: white;
 }
 
 .nav li:hover{
-    color: #22dbdb;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .nav li{
+        display: none;
+    }
+    .social-links{
+        display: none;
+    }
+
+    .nav{
+        background: none;
+    }
 }

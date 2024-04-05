@@ -1,8 +1,8 @@
 import React from "react";
 import { CarouselItem } from "./CarouselItem";
-import internet from "./assets/internet.png";
-import cloudserver from "./assets/cloud-server.png";
-import web from "./assets/web.png";
+import internet from "./assets/WebDesign.png";
+import cloudserver from "./assets/Hosting.png";
+import web from "./assets/app.png";
 import { useState } from "react";
 import './css/Carousel.css';
 export const Carousel = () =>{
@@ -52,18 +52,20 @@ export const Carousel = () =>{
                 <button onClick={() =>{
                   updateIndex(activeIndex - 1)
                 }} className="button-arrow"> 
+                
                 <span className="material-symbols-outlined">
                    arrow_back_ios
                 </span>
                 </button>
 
-                    < div className="indicators">
+                <div className="indicators">
                  {items.map((item, index) =>{
 
                     return(
                         <button onClick ={() =>{
                             updateIndex(index)
                         }}className="indicator-buttons">
+
                     <span className={`material-symbols-outlined ${index===activeIndex? "indicator-symbol-active": "indicator-symbol"}`}>
                         radio_button_checked
                     </span>
