@@ -27,26 +27,27 @@
 
   .carousel-texts{
     color: var(--neutral-dark-grayish-blue);
+    height: auto;
   }
   .carousel-title{
     font-family: "Montserrat", sans-serif;
     font-weight: var(--primary-fw);
     font-size: 30px;
-    margin-left: 400px;
+    margin-right: 200px; 
   }
 
   .carousel-texts p{
-    margin-top: 20px;
+     margin-top: 20px; 
   
   }
 
 
 
-.carousel-image {
-    width: 250px;
-    padding: 0 20px 0 20px;
-    padding-right: 200px;
-    border-radius: 500px;
+.carousel-image img{
+    width: 600px;
+     padding: 0 20px 0 20px; 
+     padding-right: 200px; 
+     border-radius: 500px;  
   }
 
   .carousel-buttons {

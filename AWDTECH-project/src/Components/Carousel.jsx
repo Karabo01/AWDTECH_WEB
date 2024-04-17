@@ -1,8 +1,8 @@
 import React from "react";
 import { CarouselItem } from "./CarouselItem";
-import internet from "./assets/WebDesign.png";
-import cloudserver from "./assets/Hosting.png";
-import web from "./assets/app.png";
+import internet from "./assets/web.png";
+import cloudserver from "./assets/serv.png";
+import web from "./assets/dev.png";
 import { useState } from "react";
 import './css/Carousel.css';
 export const Carousel = () =>{
@@ -12,19 +12,19 @@ export const Carousel = () =>{
        {
         title: "Web Hosting",
         icon : cloudserver,
-        description : "This is what we do and stuff"
+        description : "At AwdTech, we understand the critical importance of reliable and high-performance web hosting for your online presence. Our hosting services provide the backbone for your website, ensuring lightning-fast loading times, robust security measures, and 24/7 technical support. Whether you're launching a personal blog or managing a thriving e-commerce platform, trust AwdTech to deliver top-tier hosting solutions tailored to your needs. "
        },
 
        {
         title: "Web Design",
         icon : internet,
-        description : "This is what we do and stuff"
+        description : "Elevate your online presence with AwdTech's expert website design services. Our team of skilled designers combines creativity with cutting-edge technology to craft visually stunning and user-friendly websites that captivate audiences and drive results. From sleek and modern aesthetics to seamless navigation and responsive design, we specialize in creating custom-tailored websites that reflect your brand identity and exceed your expectations."
        },
 
        {
         title: "Web Application",
         icon :web ,
-        description : "This is what we do and stuff"
+        description : "`Transform your ideas into dynamic '\'digital experiences with AwdTech's professional web application design services. Whether you're looking to streamline internal processes, engage customers with interactive tools, or launch a revolutionary software product, our experienced developers leverage the latest technologies and best practices to bring your vision to life. From concept to deployment, we collaborate closely with you to develop intuitive, scalable, and feature-rich web applications that empower your business to thrive in the digital age.`"
        }
     ];
 

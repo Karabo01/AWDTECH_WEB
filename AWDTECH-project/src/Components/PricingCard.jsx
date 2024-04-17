@@ -1,4 +1,5 @@
 import './css/PricingCard.css'
+import Contact from './ContactUs';
 
 
 const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) => {
@@ -15,7 +16,7 @@ const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) 
           <div className="card-send-up">{WebTraffic}</div>
           <div className="card-send-up">{Maintenance}</div>
         </div>
-        <button className="card-btn">Read More</button>
+        < button className="card-btn">Get in Touch</button>
       </div>
     );
   };
