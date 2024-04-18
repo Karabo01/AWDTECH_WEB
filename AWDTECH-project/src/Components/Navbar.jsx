@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // Import useState if not already imported
+
+import React, { useState } from 'react';
 import './css/Navbar.css';
 import logo from './assets/Logo.jpg';
 import wh from './assets/whatsapp.png';
@@ -7,25 +8,14 @@ import ld from './assets/linkedin_icon.png';
 import menu from './assets/menu.png';
 
 const Navbar = () => {
-    // State to track whether the sideNav is open or closed
-    const [isSideNavOpen, setIsSideNavOpen] = useState(false);
-    var sideNav = document.getElementsByClassName("sideNav")
-    // Toggle the sideNav when the menu image is clicked
-    const handleMenuClick = () => {
-        setIsSideNavOpen(!isSideNavOpen);
-        if(isSideNavOpen){
-            sideNav.style.right = "0"
-        }else{
-            sideNav.style.right = "-250px"
-        }
-    };
+    const [isNavVisible, setNavVisible] = useState(false);
 
     return (
         <div className='navContainer'>
-            {/* SideNav */}
-            <div className={`sideNav ${isSideNavOpen ? 'open' : ''}`}>
-                <nav>
-                    <ul>
+            {isNavVisible && (
+                <div className='sideNav'>
+                   
+                    <nav>
                         <li>
                             <a href='/whoweare'>Who we are</a>
                         </li>
@@ -38,9 +28,9 @@ const Navbar = () => {
                         <li>
                             <a href='/ContactUs'>Contact us</a>
                         </li>
-                    </ul>
-                </nav>
-            </div>
+                    </nav>
+                </div>
+            )}
 
             {/* Main Navigation */}
             <div className='nav'>
@@ -48,15 +38,10 @@ const Navbar = () => {
                     <a href='/'>
                         <img src={logo} alt='' className='logo' />
                     </a>
-                    <img
-                        src={menu}
-                        alt='Menu'
-                        className='menu'
-                        onClick={handleMenuClick} // Add onClick event handler
-                    />
                 </div>
+                <img src={menu} alt='' className='menuimg' onClick={() => setNavVisible(!isNavVisible)} />
                 <ul>
-                    <li>
+                <li>
                         <a href='/whoweare'>Who we are</a>
                     </li>
                     <li>
@@ -70,7 +55,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className='social-links'>
-                    <a href='https://wa.me/+27686988104'>
+                <a href='https://wa.me/+27686988104'>
                         <img src={wh} alt='Whatsapp' />
                     </a>
                     <a href='https://www.instagram.com/awdtech_?igsh=azc5dnA0bndnYzM1'>
