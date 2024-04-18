@@ -12,19 +12,26 @@ export const Carousel = () =>{
        {
         title: "Web Hosting",
         icon : cloudserver,
-        description : "At AwdTech, we understand the critical importance of reliable and high-performance web hosting for your online presence. Our hosting services provide the backbone for your website, ensuring lightning-fast loading times, robust security measures, and 24/7 technical support. Whether you're launching a personal blog or managing a thriving e-commerce platform, trust AwdTech to deliver top-tier hosting solutions tailored to your needs. "
+        description : <pre>At AwdTech,
+                       we understand the critical <br></br>importance of 
+                       reliable and high-performance web <br></br>hosting
+                       for your online presence.Our hosting <br></br>services provide 
+                       the backbone for your website,<br></br>ensuring lightning-fast loading times, 
+                       robust <br></br>security measures, and 24/7 technical support. <br></br><br></br>Whether you're 
+                       launching a personal blog or <br></br>managing a thriving e-commerce platform, 
+                       trust <br></br>AwdTech to deliver top-tier hosting solutions <br></br>tailored to your needs.</pre> 
        },
 
        {
         title: "Web Design",
         icon : internet,
-        description : "Elevate your online presence with AwdTech's expert website design services. Our team of skilled designers combines creativity with cutting-edge technology to craft visually stunning and user-friendly websites that captivate audiences and drive results. From sleek and modern aesthetics to seamless navigation and responsive design, we specialize in creating custom-tailored websites that reflect your brand identity and exceed your expectations."
+        description : <pre>Elevate your online presence with AwdTech's<br></br>expert website design services. Our team of <br></br>skilled designers combines creativity with cutting<br></br>-edge technology to craft visually stunning and <br></br>user-friendly websites that captivate audiences <br></br>and drive results. <br></br><br></br>From sleek and modern aesthetics to seamless <br></br>navigation and responsive design, we specialize <br></br>in creating custom-tailored websites that reflect<br></br> your brand identity and exceed your <br></br>expectations.</pre>
        },
 
        {
         title: "Web Application",
         icon :web ,
-        description : "`Transform your ideas into dynamic '\'digital experiences with AwdTech's professional web application design services. Whether you're looking to streamline internal processes, engage customers with interactive tools, or launch a revolutionary software product, our experienced developers leverage the latest technologies and best practices to bring your vision to life. From concept to deployment, we collaborate closely with you to develop intuitive, scalable, and feature-rich web applications that empower your business to thrive in the digital age.`"
+        description : <pre>Transform your ideas into dynamic digital <br></br>experiences with AwdTech's professional web <br></br>application design services. Whether you're <br></br>looking to streamline internal processes, engage <br></br>customers with interactive tools, or launch a <br></br>revolutionary software product, our experienced <br></br>developers leverage the latest technologies and <br></br>best practices to bring your vision to life. <br></br><br></br>From concept to deployment, we collaborate <br></br>closely with you to develop intuitive, scalable, <br></br>and feature-rich web applications that empower <br></br>your business to thrive in the digital age.</pre>
        }
     ];
 

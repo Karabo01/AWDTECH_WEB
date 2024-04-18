@@ -1,8 +1,14 @@
+import React from 'react';
 import './css/PricingCard.css'
-import Contact from './ContactUs';
-
 
 const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) => {
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    };
+
     return (
       <div className="PricingCard">
         <header>
@@ -16,9 +22,9 @@ const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) 
           <div className="card-send-up">{WebTraffic}</div>
           <div className="card-send-up">{Maintenance}</div>
         </div>
-        < button className="card-btn">Get in Touch</button>
+        <button className="card-btn" onClick={scrollToBottom}>Read More</button>
       </div>
     );
-  };
+};
 
-export default PricingCard
+export default PricingCard;
