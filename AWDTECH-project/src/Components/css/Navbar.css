@@ -1,5 +1,6 @@
-*
-{
+
+
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,11 +8,15 @@
     font-weight: var(--primary-fw);
     font-size: var(--primary-fs);
 }
-.menu{
+.menuimg{
     display: none;
 }
 .sideNav{
     display: none;
+}
+
+.social-links{
+    display: flex;
 }
 .nav{
     /* position: fixed; */
@@ -37,8 +42,8 @@
 
 .nav li{
     display: inline-block;
-    margin: 10px 20px;
-    /* font-size:25px; */
+    margin: 10px 10px;
+    font-size:25px;
     cursor: pointer;
 }
 .nav ul{
@@ -59,9 +64,14 @@
 
 .nav li:hover{
     color: white;
+} 
+
+ nav{
+    flex: 5;
+    text-align: right;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 740px) {
     .sideNav {
         display: block;
     }
@@ -80,60 +90,42 @@
         display: flex;
         width: 30px;
         height: 30px;
-        margin-left: 400px;
+        margin-left: 150px;
     }
     
     .sideNav{
-        width: 250px;
-        height: 100vh;
-        position: fixed;
+        width: 120px;
+        height: 150px;
+        position:absolute;
         border-radius: 10px;
-        left: 630px;
-        top: 80px;
-        background: linear-gradient(to right,white,rgb(112, 202, 235),hsl(194, 91%, 74%));
+        left: 320px;
+        top: 100px;
+        background: linear-gradient(to bottom, white, rgb(100, 228, 228));
         z-index: 1;
         transition: 0.5s; 
     } 
-     nav ul li{
-        list-style: none;
-        display: block;
-        margin: 40px 20px;
-        top: 70px;
-        position: relative;
+  
+    
+    .sideNav  li {
+        display: flex;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
-    nav ul li a{
+
+    .sideNav li a{
+        color: inherit;
         text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
+        
+        
     }
-    nav ul li::after{
-        content: '';
-        height: 3px;
-        width: 0;
-        background: #fff;
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        transition: 0.5s;
+   
+    .sideNav li.active{
+        color: white;
     }
-    nav ul li:hover:after{
-        width: 100%;
+    
+    .sideNav li:hover{
+        color: white;
     } 
-    /* .menuBtn{
-        width: 20px;
-        height: 20px;
-        background: #009688;
-        text-align: center;
-        position: fixed;
-        right: 30px;
-        top: 20px;
-        border-radius: 3px;
-        z-index: 3;
-        cursor: pointer;
-    }
-    .menuBtn img{
-        width: 20px;
-        margin-top: 15px;
-    } */
     
 }

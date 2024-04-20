@@ -2,7 +2,7 @@
 .carousel {
     overflow: hidden;
     width:  100%;
-    /* display: inline-flex; */
+     display: inline-flex; 
     flex-direction:column;
     justify-content: center;
     height: 560px; 
@@ -56,7 +56,7 @@
     width: 600px;
      padding: 0 20px 0 20px; 
      padding-right: 200px; 
-      border-radius: 500px;   
+    border-radius: 500px;   
      height: auto;
   }
 
@@ -115,7 +115,7 @@
     }
    
     .carousel-title{
-      margin-left: -20px;
+      margin-left: -50px;
       width: 500px;
       font-size: 20px;
       /* margin-right: 0px; */

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './css/Navbar.css';
 import logo from './assets/Logo.jpg';

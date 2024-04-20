@@ -22,7 +22,7 @@ const PricingCard = ({ title, price, storage, users, WebTraffic, Maintenance }) 
           <div className="card-send-up">{WebTraffic}</div>
           <div className="card-send-up">{Maintenance}</div>
         </div>
-        <button className="card-btn" onClick={scrollToBottom}>Read More</button>
+        <button className="card-btn" onClick={scrollToBottom}>Get in Touch</button>
       </div>
     );
 };
