@@ -134,7 +134,7 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 740px) {
   .pricingSection {
     padding-block: 4em;
     height: auto;

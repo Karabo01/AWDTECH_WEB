@@ -10,9 +10,6 @@ const AboutUs = () => {
     <motion.div
     >
       <WhoWeAre/>
-      <Landing/>
-      <Carousel/>
-      <Pricing/>
       <ContactUs/>
     </motion.div>
   )

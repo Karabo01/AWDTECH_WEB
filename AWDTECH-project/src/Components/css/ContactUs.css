@@ -97,14 +97,15 @@ textarea {
     border: 2px solid transparent;
 }
     
-.social-links img{
+.social-links-contact img{
     height: 13px;
     margin: 20px;
     cursor: pointer;
 }
 
-.social-links{
+.social-links-contact{
     text-align: center;
+    margin-left: 0px;
 }
 
 @media (max-width: 740px) {
@@ -125,6 +126,10 @@ textarea {
    margin-top: -140px;
     
     
+   }
+
+   .social-links-contact{
+    display: none;
    }
 /* 
    .address{

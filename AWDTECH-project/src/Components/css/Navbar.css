@@ -15,8 +15,14 @@
     display: none;
 }
 
-.social-links{
+.social-links-nav{
     display: flex;
+}
+
+.social-links-nav img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
 }
 .nav{
     /* position: fixed; */
@@ -78,9 +84,11 @@
     .nav li{
         display: none;
     }
-    .social-links{
+    .social-links-nav{
         display: none;
     }
+
+    
     .nav{
         background: linear-gradient(to right, white,hsl(0, 0%, 100%), hsl(167, 65%, 83%),hsl(0, 0%, 100%), hsl(0, 0%, 100%));
     }

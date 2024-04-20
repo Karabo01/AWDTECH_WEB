@@ -53,7 +53,7 @@ const Navbar = () => {
                         <a href='/ContactUs'>Contact us</a>
                     </li>
                 </ul>
-                <div className='social-links'>
+                <div className='social-links-nav'>
                 <a href='https://wa.me/+27686988104'>
                         <img src={wh} alt='Whatsapp' />
                     </a>

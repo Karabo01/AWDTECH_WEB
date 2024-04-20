@@ -70,7 +70,7 @@
     border: 2px solid transparent;
   }
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 740px) {
     .PricingCard:nth-child(2) {
       align-self: center;
     }
