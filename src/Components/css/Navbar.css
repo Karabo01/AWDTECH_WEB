@@ -102,11 +102,11 @@
     }
     
     .sideNav{
-        width: 120px;
+        width: 180px;
         height: 150px;
         position:absolute;
         border-radius: 10px;
-        left: 320px;
+        left: 250px;
         top: 100px;
         background: linear-gradient(to bottom, white, rgb(100, 228, 228));
         z-index: 1;
