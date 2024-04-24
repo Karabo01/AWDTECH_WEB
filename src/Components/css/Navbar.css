@@ -102,11 +102,11 @@
     }
     
     .sideNav{
-        width: 100%;
+        width: 60%;
         height: 30%;
         position:absolute;
         border-radius: 10px;
-        left: 250px;
+         left: 165px; 
         top: 100px;
         background: linear-gradient(to bottom, white, rgb(100, 228, 228));
         z-index: 1;
@@ -116,9 +116,10 @@
     
     .sideNav  li {
         display: flex;
-        margin-left: 10px;
+        margin-left: 80px;
         margin-bottom: 10px;
         margin-top: 20px;
+       
     }
 
     .sideNav li a{
