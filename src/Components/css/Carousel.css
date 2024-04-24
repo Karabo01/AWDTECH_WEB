@@ -129,7 +129,7 @@
 
     .carousel-title p{
       
-      /* width: 60px; */
+      width: auto;
       font-weight: 500;
     }
 
