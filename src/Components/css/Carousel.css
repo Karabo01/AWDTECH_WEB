@@ -116,7 +116,7 @@
 
     .flexcontainer{
       flex-direction: column;
-      width: fit-content;
+      width: 100%;
     }
    
     .carousel-title{
