@@ -128,7 +128,8 @@
     }
 
     .carousel-title p{
-      width: auto;
+      display: none;
+      width: 60px;
       font-weight: 500;
     }
 
