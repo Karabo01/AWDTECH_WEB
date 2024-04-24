@@ -106,7 +106,7 @@
 
   @media (max-width: 740px){
     .flexcontainer img{
-     width: 40rem;
+     width: auto;
        height: 20rem;  
       /* object-position: center; */
       border-radius: 0px;
