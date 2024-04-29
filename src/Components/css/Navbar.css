@@ -102,12 +102,17 @@
     }
     
     .sideNav{
-        width: 95%;
-        height: 40%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1em 0 1em .5em;
+        display: flex;
+        width: 90%;
+        height: inherit;
         position:absolute;
         border-radius: 10px;
-        left: 162px; 
+        left: 30%; 
         top: 100px;
+        text-align: right;
         background: linear-gradient(to bottom, white, rgb(100, 228, 228));
         z-index: 1;
         transition: 1s; 
@@ -115,7 +120,7 @@
   
     
     .sideNav  li {
-       
+        
         display: flex;
         margin-top: 20px;
        
