@@ -5,6 +5,10 @@ import wh from './assets/whatsapp.png';
 import ig from './assets/ig.png';
 import ld from './assets/linkedin_icon.png';
 import menu from './assets/menu.png';
+import contact from './assets/contact-us.png';
+import pricing from './assets/pricing-plan.png';
+import services from './assets/services.png';
+import aboutus from './assets/about-us.png';
 
 const Navbar = () => {
     const [isNavVisible, setNavVisible] = useState(false);
@@ -16,16 +20,28 @@ const Navbar = () => {
                    
                     <nav>
                         <li>
-                            <a href='/whoweare'>Who we are</a>
+                        <a href='/WhoWeAre'>
+                                <span><img src={aboutus}></img></span>
+                                Who We Are
+                        </a>
                         </li>
                         <li>
-                            <a href='/Services'>Services</a>
+                        <a href='/Services'>
+                                <span><img src={services}></img></span>
+                                Services
+                        </a>
                         </li>
                         <li>
-                            <a href='/Pricing'>Pricing</a>
+                            <a href='/Pricing'>
+                                <span><img src={pricing}></img></span>
+                                Pricing
+                            </a>
                         </li>
                         <li>
-                            <a href='/ContactUs'>Contact us</a>
+                            <a href='/ContactUs' >
+                            <span><img src={contact}></img></span>
+                                Contact Us
+                            </a>
                         </li>
                     </nav>
                 </div>
