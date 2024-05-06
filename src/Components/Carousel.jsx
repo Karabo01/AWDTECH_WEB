@@ -3,8 +3,10 @@ import { CarouselItem } from "./CarouselItem";
 import internet from "./assets/web.png";
 import cloudserver from "./assets/serv.png";
 import web from "./assets/dev.png";
-import { useState } from "react";
+import { useState,useEffect,useRef } from "react";
 import './css/Carousel.css';
+import {motion, useAnimation,useInView} from 'framer-motion';
+
 export const Carousel = () =>{
     
     const [activeIndex, setActiveIndex] = useState(0);
@@ -46,11 +48,31 @@ export const Carousel = () =>{
     
     
 
+    const ref= useRef(null);
+    const isInView = useInView(ref, {once: true});
+    const mainControls = useAnimation();
+    useEffect(() =>{
+      if(isInView){
+        mainControls.start("visible");
+      }
+  },[isInView]);
+
+
     return(
-        <div className="carousel">
-            <div className="inner" style = {{transform: `translate(-${activeIndex * 100}%)`}}>
-                {items.map((item) =>{
-                    return  <CarouselItem item={item}/> ;
+        <motion.div className="carousel" ref={ref}
+        variants={{
+            hidden: {opacity: 0, y: 75},
+            visible: {opacity: 1, y: 0} 
+          }}
+          initial= "hidden"
+          animate= {mainControls}
+          transition={{ duration: 0.5, delay: 0.25}}
+        
+        
+        >
+            <div className="inner" style={{ transform: `translate(-${activeIndex * 100}%)` }}>
+                {items.map((item, index) => {
+                    return <CarouselItem key={index} item={item} />;
                 })}
            
             </div>
@@ -66,22 +88,18 @@ export const Carousel = () =>{
                 </button>
 
                 <div className="indicators">
-                 {items.map((item, index) =>{
-
-                    return(
-                        <button onClick ={() =>{
-                            updateIndex(index)
-                        }}className="indicator-buttons">
-
-                    <span className={`material-symbols-outlined ${index===activeIndex? "indicator-symbol-active": "indicator-symbol"}`}>
-                        radio_button_checked
-                    </span>
-                    </button>
-                    );
-                 })}
-                    
-                   
-                </div>
+    {items.map((item, index) => {
+        return (
+            <button key={index} onClick={() => {
+                updateIndex(index)
+            }} className="indicator-buttons">
+                <span className={`material-symbols-outlined ${index === activeIndex ? "indicator-symbol-active" : "indicator-symbol"}`}>
+                    radio_button_checked
+                </span>
+            </button>
+        );
+    })}
+</div>
                 <button onClick={() =>{
                   updateIndex(activeIndex + 1)
                 }}className="button-arrow">
@@ -90,7 +108,7 @@ export const Carousel = () =>{
                        </span>
                 </button>
             </div>
-        </div>
+        </motion.div>
       
         
       

@@ -1,13 +1,30 @@
 import React from 'react'
 import PricingCard from "./PricingCard";
 import './css/Pricing.css'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import {motion, useAnimation,useInView} from 'framer-motion';
+
 const Pricing = () => {
     const [selectMonthly, setSelectMonthly] = useState(true);
-    console.log(selectMonthly);
+    const ref= useRef(null);
+    const isInView = useInView(ref, {once: true});
+    const mainControls = useAnimation();
+    useEffect(() =>{
+      if(isInView){
+        mainControls.start("visible");
+      }
+  },[isInView]);
   return (
     <div>
-        <div className='pricingSection'>
+        <motion.div ref={ref} className='pricingSection'
+        
+        variants={{
+          hidden: {opacity: 0, y: 75},
+          visible: {opacity: 1, y: 0} 
+        }}
+        initial= "hidden"
+        animate= {mainControls}
+        transition={{ duration: 0.5, delay: 0.25}}>
         <header>
             <h1 className="header-topic">Our Pricing Plan</h1>
             <div className="header-row">
@@ -55,7 +72,7 @@ const Pricing = () => {
 
             />
           </div>
-          </div>
+          </motion.div>
     </div>
   )
 }
