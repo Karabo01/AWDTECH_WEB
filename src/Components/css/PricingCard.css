@@ -6,6 +6,7 @@
     background-color: var(--neutral-white);
     width: min(100%, 30rem);
   }
+
   
   .PricingCard:nth-child(2) {
     background-image: linear-gradient(to right, var(--primary-linear-gradient));
